@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" type="image/jpg" href="./Logo gran sport.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gran Sport</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Nunito:wght@500&family=Open+Sans:wght@600&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      .borde {
+        /*border: 3px solid red;
+       */
+      }
+      .logo {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        height: 30vh;
+      }
+      .imaLogo {
+        border-radius: 50%;
+        margin: 50px auto 30px auto;
+        padding: auto;
+        height: 26vh;
+      }
+
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 100%;
+        align-content: space-around;
+        align-items: center;
+        margin: 40px auto;
+      }
+      .item {
+        padding: 25px;
+        min-width: 120px;
+        padding: 20px;
+        border: 1px solid blue;
+        border-radius: 20px;
+        min-height: 50px;
+        text-align: center;
+        background: #777;
+        margin: 50px 10px 5px 10px;
+        height: 110px;
+        color: whitesmoke;
+        font-family: "Nunito", sans-serif;
+      }
+      .item:hover {
+        background: white;
+        color: black;
+        font-size: 2.5em;
+      }
+      .item img {
+        height: 70px;
+        width: 70px;
+      }
+      .item p {
+        font-size: 1.2em;
+        font-family: "Nunito", sans-serif;
+      }
+      .frace {
+        text-align: center;
+        margin-top: 15px;
+        padding: 20px 20px 1px 20px;
+        font-family: "Cinzel", serif;
+      }
+      .Pie {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      .Pie img {
+        width: 110px;
+        height: 100px;
+        margin: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="logo">
+      <img
+        src="./Logo gran sport.png"
+        alt="Gran Soprt Pizzeria"
+        class="imaLogo"
+      />
+    </div>
+    <div class="frace">
+      <h2>
+        Restaurante clásico en San Fernando, con más de 50 años de historia.
+      </h2>
+    </div>
+
+    <div class="container borde">
+      <div class="item" id="Carta">
+        <img src="./menu.png" alt="Menu de Gran Sport" tabindex="0" />
+        <p>Nuestra Carta</p>
+      </div>
+      <div class="item" id="Whatsapp">
+        <img src="./whatsapp.png" alt="Mensaje de Whatsapp" tabindex="1" />
+        <p>Whatsapp</p>
+      </div>
+      <div class="item" id="PedidosYa">
+        <img src="./PedidosYa.jpg" alt="Pedir por Pedidos YA" tabindex="2" />
+        <p>Pedidos Ya</p>
+      </div>
+      <div class="item" id="Mapa">
+        <img src="./mapa.png" alt="Como llegar ? Mapa" tabindex="3" />
+        <p>Como llegar?</p>
+      </div>
+    </div>
+    <div class="Pie" id="Instagram">
+      <img
+        src="./instagram.jpg"
+        alt="Seguinos en Instagram - @sfgransport"
+        tabindex="4"
+      />
+      <h2>
+        seguinos en
+        <a href="https://www.instagram.com/sfgransport/" target="_black"
+          >@sfgransport</a
+        >
+      </h2>
+      <div></div>
+    </div>
+
+    <script>
+      // self executing function here
+      (function () {
+        const carta = document.getElementById("Carta");
+        carta.addEventListener("click", function (e) {
+          window.location.href = "https://menu.maxirest.com/22233";
+        });
+
+        const Whatsapp = document.getElementById("Whatsapp");
+        Whatsapp.addEventListener("click", function (e) {
+          window.location.href =
+            "https://api.whatsapp.com/send?phone=541164842738";
+        });
+        const PedidosYa = document.getElementById("PedidosYa");
+        PedidosYa.addEventListener("click", function (e) {
+          window.location.href =
+            "https://www.pedidosya.com.ar/restaurantes/san-fernando/gran-sport-sanfer-menu";
+        });
+        const Mapa = document.getElementById("Mapa");
+        Mapa.addEventListener("click", function (e) {
+          window.location.href =
+            "https://www.google.com.ar/maps/place/GRAN+SPORT/@-34.4416328,-58.5583244,17z/data=!3m1!4b1!4m5!3m4!1s0x95bca5623f79a803:0x3fc0a85c57b4d678!8m2!3d-34.4416328!4d-58.5561357?shorturl=1";
+        });
+        const Instagram = document.getElementById("Instagram");
+        Instagram.addEventListener("click", function (e) {
+          window.location.href = "https://www.instagram.com/sfgransport/";
+        });
+      })();
+    </script>
+  </body>
+</html>
